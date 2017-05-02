@@ -13,7 +13,8 @@ CROSS_COMPILE = mipsel-linux-
 endif
 
 CFLAGS = -O2 -Wall -g -lrt
-CC = $(CROSS_COMPILE)gcc
+#CC = $(CROSS_COMPILE)gcc
+CC = gcc
 
 BNDSTRG_OBJS = bndstrg.o driver_wext.o eloop.o os_internal.o main.o util.o debug.o netlink.o
 #ctrl_iface_unix.o
